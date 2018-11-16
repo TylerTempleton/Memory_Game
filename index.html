@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Name:  Tyler Templeton
+Assignment:  Assignment 1 Memory Game HARDCORE
+Date:  [June 21th, 2015]
+[a blank line]
+App Description: click 4 cards at a time to match the 4 choices until all 
+matches are found
+Page Description: index is this file sets up the "game board" via a table of images, a reset button, and a counter of attempts
+Files: 
+index is this file sets up the "game board" via a table of images, a reset button, and a counter of attempts
+js is the file containing the required java script to shuffle flip the cards and reset the board
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="CSS/css.css">
+        <script src="js/js.js"></script>
+        
+    </head>
+    <body>
+        <embed src="music/bg.mp3"    loop="true"     autoplay="true"     width="0"     height="0">
+        <div id="content"> <h1>Memory Game: HARDCORE Edition</h1>
+            <h2>Match 2? why not match 4! Don't click the same picture after you press it counts! Muhahaha!</h2>
+        <!-- Table to hold game board -->
+        <table>
+            <tr>
+                <!-- javascript:choose() calls the choose() function when cell is
+                clicked and passes the value in brackets to the function identifying
+                which cell was clicked -->
+                <td><a href="javascript:choose(0)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(1)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(2)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(3)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+            </tr>
+            <tr>
+                <td><a href="javascript:choose(4)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(5)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(6)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(7)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+            </tr>
+            <tr>
+                <td><a href="javascript:choose(8)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(9)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(10)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(11)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+            </tr>
+             <tr>
+                <td><a href="javascript:choose(12)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(13)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(14)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(15)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+            </tr>
+             <tr>
+                <td><a href="javascript:choose(16)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(17)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(18)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+                <td><a href="javascript:choose(19)"><img src="./img/nyaa.png" width=100 height=100 alt="whats underneth?"></a> </td>
+            </tr>
+                <td></td>
+                <td>
+                    <button onclick="reset()">restart</button> 
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>No. of Attempts</td>
+                <td id="attempts">0</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
